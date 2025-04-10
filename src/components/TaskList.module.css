@@ -39,3 +39,24 @@
   font-size: 0.625rem;
   font-weight: bold;
 }
+
+.emptyTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.emptyTask svg {
+  color: var(--gray-300);
+  margin-bottom: 1rem;
+}
+.emptyTask p {
+  color: var(--gray-300);
+  font: 100;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.emptyTask p:first-child {
+  font-weight: bold;
+}
