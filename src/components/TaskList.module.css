@@ -1,5 +1,6 @@
 .taskList {
   margin-top: 4rem;
+  max-width: 45rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -8,7 +9,8 @@
 }
 
 .header {
-  width: 44.75rem;
+  width: 90%;
+  max-width: 44.75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,4 +61,10 @@
 
 .emptyTask p:first-child {
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .taskList {
+    margin-top: 6rem;
+  }
 }

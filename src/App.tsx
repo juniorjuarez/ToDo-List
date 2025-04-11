@@ -3,6 +3,7 @@ import "./Global.css";
 import { Header } from "./components/Header";
 import { InputTask } from "./components/InputTask";
 import { TaskList } from "./components/TaskList";
+import styles from "./App.module.css";
 
 interface ITask {
   id: string;
@@ -31,7 +32,7 @@ function App() {
   }
 
   return (
-    <>
+    <main className={styles.main}>
       <Header />
       <InputTask handleCreateNewTask={handleCreateNewTask} />
 
@@ -40,7 +41,7 @@ function App() {
         toggleTaskCompleted={toggleTaskCompleted}
         handleDeleteTask={handleDeleteTask}
       />
-    </>
+    </main>
   );
 }
 

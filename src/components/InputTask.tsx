@@ -44,8 +44,8 @@ export const InputTask = ({ handleCreateNewTask }: IInputTaskProps) => {
   }
 
   return (
-    <div>
-      <form className={styles.input_task} onSubmit={createTask}>
+    <div className={styles.input_task}>
+      <form className={styles.form_input} onSubmit={createTask}>
         <input
           type="text"
           placeholder="Adicione uma nova tarefa"

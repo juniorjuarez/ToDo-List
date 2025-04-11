@@ -9,8 +9,9 @@
   display: flex;
   gap: 1rem;
   background: var(--gray-500);
-  width: 44.75rem;
-  height: 4.5rem;
+  max-width: 44.75rem;
+  width: 100%;
+  height: auto;
   justify-content: space-between;
   align-items: start;
   padding: 0.875rem;
@@ -52,9 +53,11 @@
 .taskItem p {
   color: var(--gray-100);
   font-size: 0.875;
-  width: 40rem;
+  width: 90%;
+  max-width: 40rem;
   line-height: 1.4;
   font-weight: 200;
+  word-break: break-word; /* quebra linhas longas */
 }
 
 .trashButton {
@@ -78,4 +81,10 @@
 }
 .taskItem.checked p {
   text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+  .taskItem {
+    width: 90%;
+  }
 }
