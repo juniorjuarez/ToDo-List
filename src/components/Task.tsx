@@ -1,4 +1,4 @@
-import styles from "./Tasks.module.css";
+import styles from "./Task.module.css";
 import { Trash } from "lucide-react";
 
 interface ITaskProps {
