@@ -5,7 +5,7 @@
   width: 100%;
   max-width: 736px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 0.5rem 0.5rem 0.5rem;
 }
 .taskItem {
   display: flex;
